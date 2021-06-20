@@ -1,0 +1,107 @@
+.container {
+    background: var(--brand-color);
+    background-image: url("../../../public/images/header-background.png");
+    height: 616px;
+
+    @media(max-width: 720px) {
+        height: 540px;
+    }
+}
+
+.section {
+    display: flex;
+    align-items: center;
+
+    nav {
+        a {
+            color: var(--white);
+            font-weight: 500;
+            margin-left: 2.5rem;
+            font-size: 0.8rem;
+            transition: filter 0.2s;
+
+             & + a {
+                margin-left: 2rem;
+            }
+
+             &:hover {
+                filter: brightness(0.8);
+            }
+        }
+    }
+}
+
+.singInSection {
+    margin-left: auto;
+    margin-right: 2rem;
+    a {
+        color: var(--white);
+        font-weight: 500;
+        margin-left: 2.5rem;
+        font-size: 0.8rem;
+        transition: filter 0.2s;
+        
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1.25rem;
+    background: var(--green-success);
+    width: 48px;
+    height: 64px;
+    border-radius: 0px 0px 32px 32px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9.5rem;
+    margin-left: 7.8rem;
+
+    @media(max-width: 720px) {
+        flex-direction: column;
+        justify-content: center;
+        margin: 5.75rem 1rem 0 1rem;
+    }
+
+    > div {
+        h1 {
+            font-weight: 500;
+            line-height: 3rem;
+            font-size: 2.5rem;
+            color: var(--white);
+
+            max-width: 490px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--white);
+            line-height: 1.5rem;
+            margin-top: 1.5rem;
+            max-width: 584px;
+        }
+
+        &.imageHeader {
+            margin-right: 14.25rem;
+        }
+
+        @media(max-width: 720px) {
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.container {
+    width: 100vw;
+    height: 112px;
+
+    background: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin-left: 2rem;
+        color: var(--brand-color);
+
+        span {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--black);
+        }
+    }
+
+    @media (max-width: 1080px) {
+        flex-direction: column;
+        img {
+            margin-top: 2rem;
+        }
+        a {
+            text-align: center;
+            margin-top: 1rem;
+            span {
+              margin-top: 0.75rem;
+            }
+        }
+    }
+}
