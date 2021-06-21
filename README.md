@@ -26,7 +26,7 @@
 
 - 3: Run<strong> yarn </strong> (install all dependencies);
 
-- 4: To finish, Run<strong> yarn start </strong> (start server);
+- 4: To finish, Run<strong> yarn dev </strong> (start server);
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
